@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Calculadora
+    public static class Calculadora
     {
         private static char ValidarOperador(char operador)
         {
