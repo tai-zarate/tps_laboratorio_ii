@@ -30,7 +30,11 @@ namespace Entidades
         {
             this.Numero = strNumero;
         }
-
+        /// <summary>
+        /// Valida que el número ingresado sea un número
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns>El número ingresado en formato double o 0 si no es un número lo ingresado</returns>
         private double ValidarOperando(string strNumero)
         {
             double retornoAux;
@@ -44,6 +48,11 @@ namespace Entidades
             return retornoAux;
         }
 
+        /// <summary>
+        /// Valida que el número en lblResultado sea un número binario
+        /// </summary>
+        /// <param name="binario">Texto del lblResultado</param>
+        /// <returns></returns>
         private bool EsBinario(string binario)
         {
             bool retornoAux = true;
@@ -86,6 +95,11 @@ namespace Entidades
             return resultado;
         }
 
+        /// <summary>
+        /// Convierte el string recibido como parametro a decimal, primero verificando si es número binario 
+        /// </summary>
+        /// <param name="binario">Número binario en formato string</param>
+        /// <returns>El número binario convertido a decimal o "Valor invalido" si ocurrío un error</returns>
         public string BinarioDecimal(string binario)
         {
             string resultado = "Valor invalido";
@@ -109,6 +123,11 @@ namespace Entidades
             return resultado;
         }
 
+        /// <summary>
+        /// Convierte un número decimal a binario
+        /// </summary>
+        /// <param name="numero">Número decimal</param>
+        /// <returns>Número convertido a binario o "Valor invalido" si hubo un error</returns>
         public string DecimalBinario(double numero)
         {
             int remainder;
@@ -136,6 +155,11 @@ namespace Entidades
             return resultado;
         }
 
+        /// <summary>
+        /// Convierte un número decimal a binario
+        /// </summary>
+        /// <param name="numero">Número decimal</param>
+        /// <returns>Número convertido a binario o "Valor invalido" si hubo un error</returns>
         public string DecimalBinario(string numero)
         {
             string resultado;

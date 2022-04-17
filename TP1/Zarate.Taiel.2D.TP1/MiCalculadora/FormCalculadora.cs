@@ -74,6 +74,11 @@ namespace MiCalculadora
             lblResultado.Text = resultado.ToString();
         }
 
+        /// <summary>
+        /// Designa el primer indice del cmbOperador a la hora de cargar el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             this.cmbOperador.SelectedIndex = 0;
