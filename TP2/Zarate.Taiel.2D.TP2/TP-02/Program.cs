@@ -16,7 +16,7 @@ namespace TP_02
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            Console.Title = "";
+            Console.Title = "Zarate Taiel";
 
             Taller taller = new Taller(6);
 
